@@ -1,6 +1,11 @@
 public struct PlayingCard {
   let rank: Rank
   let suit: Suit
+
+  public init(rank: rank, suit: suit) {
+    self.rank = rank
+    self.suit = suit
+  }
 }
 
 extension PlayingCard: CustomStringConvertible {
