@@ -1,5 +1,5 @@
-@testable import PlayingCard
 import XCTest
+@testable import PlayingCard
 
 class SuitTests: XCTestCase {
   func testSuitStringEquality() {
