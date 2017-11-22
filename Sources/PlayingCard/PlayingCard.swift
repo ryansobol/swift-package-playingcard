@@ -25,3 +25,9 @@ extension PlayingCard: Comparable {
     return lhs.rank == rhs.rank ? lhs.suit < rhs.suit : lhs.rank < rhs.rank
   }
 }
+
+extension PlayingCard: Hashable {
+  public var hashValue: Int {
+    return description.hashValue
+  }
+}
